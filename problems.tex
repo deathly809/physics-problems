@@ -1,0 +1,132 @@
+\documentclass[oneside]{book}
+
+% Custom environments
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{pifont,mdframed}
+\usepackage[dvipsnames]{xcolor}
+
+% math
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+% Make margins reasonable
+\usepackage{fullpage}
+
+% Make TOC clickable
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{
+	{images/}
+}
+
+
+% References
+\usepackage{fancyref}
+
+% Index
+\usepackage{mfirstuc}
+\usepackage{makeidx}
+
+% Header information
+\title{Physics: Notes for Independent Learning}
+\author{Jeffrey A. Robinson}
+
+\makeindex
+% Add index to TOC
+\usepackage[totoc]{idxlayout}
+
+%
+%	Defined functions
+%
+
+% Theorem, Definitions, Proofts
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+
+% Overline and under line text
+\makeatletter
+\newcommand*{\textoverline}[1]{$\overline{\hbox{#1}}\m@th$}
+\makeatother
+
+\makeatletter
+\newcommand*{\textunderline}[1]{$\underline{\hbox{#1}}\m@th$}
+\makeatother
+
+\makeatletter
+\newcommand*{\textbottomtopline}[1]{\textunderline{\textoverline{#1}}}
+\makeatother
+
+% format and add to index
+\newcommand{\addindex}[1]{%
+  \textbf{#1}%
+  \index{#1@\protect\capitalisewords{#1}}%
+   }
+\makeatother
+
+% refs
+\newcommand{\Def}[1]{Definition~\ref{#1}}
+\newcommand{\Fig}[1]{Figure~\ref{#1}}
+\newcommand{\Eq}[1]{Equation~\ref{#1}}
+
+%
+%	Defined Environments
+%
+\newenvironment{caution}
+  {%
+  	\par\begin{mdframed}%
+		\begin{list}{}{									%
+			\leftmargin=1cm								%
+			\labelwidth=\leftmargin						%
+		}\item[											%
+			\color{BurntOrange}							%
+        	\large\textsc{\textbottomtopline{Caution}}	%
+        ]												%
+  }
+  {\end{list}\end{mdframed}\par}
+
+
+\newcounter{DiscussionCounter}[chapter]
+\newcounter{ExerciseCounter}[chapter]
+
+\newcommand{\discussion}[1] {\noindent\stepcounter{DiscussionCounter}\textbf{Q\arabic{chapter}.\arabic{DiscussionCounter}} #1\vspace{5mm}}
+
+\newcommand{\exercise}[1] {\noindent\stepcounter{ExerciseCounter}\textbf{\arabic{chapter}.\arabic{ExerciseCounter}} #1\vspace{5mm} }
+
+% Begin
+\begin{document}
+
+% Title and TOC
+\maketitle
+\tableofcontents
+
+\part{Mechanics}
+\input{chapters/mechanics/chapter1.tex}
+
+% Waves need to be understood 100% Almost all things in Physics are modeled using waves.
+\part{Waves and Acoustics}
+
+% Fundamental
+\part{Thermodynamics}
+
+% Advanced physics comes out of this!
+\part{Electromagnetism}
+
+% More applied like stuff
+\part{Optics}
+
+% Introduction to Relativity, particle physics, quantum physics
+\part{Modern Physics}
+
+% Appendix stuff
+\appendix 
+\part{Appendices}
+\input{appendices/constants.tex}
+\input{appendices/SI.tex}
+
+\printindex
+
+\end{document}

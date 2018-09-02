@@ -1,0 +1,9 @@
+
+# latex output
+*.aux
+*.log
+*.pdf
+*.idx
+*.toc
+*.gz
+*.out
