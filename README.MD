@@ -15,7 +15,7 @@ If things start to go slower than I want I will switch to only doing Discussion 
 
 I am going to keep track of how things are going.  This will be mostly for me so that I can stay encouraged and also gauge how I am doing.
 
-You can follow along [here](docs\Journal.md) if you are realllly bored.
+You can follow along [here](docs/Journal.md) if you are realllly bored.
 
 ## Schedule
 
