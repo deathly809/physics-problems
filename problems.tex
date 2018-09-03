@@ -1,4 +1,4 @@
-\documentclass[oneside]{book}
+\documentclass[oneside,draft]{book}
 
 % Custom environments
 \usepackage[english]{babel}
@@ -6,9 +6,16 @@
 \usepackage{pifont,mdframed}
 \usepackage[dvipsnames]{xcolor}
 
+% graphics
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,angles,quotes}
+
 % math
 \usepackage{amsmath}
 \usepackage{amsthm}
+
+% SI units
+\usepackage{siunitx}
 
 % Make margins reasonable
 \usepackage{fullpage}
@@ -96,12 +103,20 @@
 
 \newcommand{\exercise}[1] {\noindent\stepcounter{ExerciseCounter}\textbf{\arabic{chapter}.\arabic{ExerciseCounter}} #1\vspace{5mm} }
 
+\addcontentsline{toc}{section}{Introduction}
+
+\setcounter{secnumdepth}{0}
+
 % Begin
 \begin{document}
+
+\frontmatter
 
 % Title and TOC
 \maketitle
 \tableofcontents
+
+\mainmatter
 
 \part{Mechanics}
 \input{chapters/mechanics/chapter1.tex}
@@ -163,6 +178,8 @@
 \input{chapters/modernphysics/chapter42.tex}
 \input{chapters/modernphysics/chapter43.tex}
 \input{chapters/modernphysics/chapter44.tex}
+
+\backmatter
 
 % Appendix stuff
 \appendix 

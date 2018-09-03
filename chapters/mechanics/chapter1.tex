@@ -1,7 +1,7 @@
 
 \chapter{Units, Physical Quantities, and Vectors}
 
-\section*{Discussion Questions}
+\section{Discussion Questions}
 
 % 1.1
 \discussion{We just need a single experiment to disprove a theory.  However, there is no number of experiments to prove a theory, just increase confidence.  This breaks down with a finite number of options.}
@@ -14,7 +14,7 @@
 
 % 1.4
 \discussion{Yes.  Currently the mass is derived directly from these.  Other quantities are based off of properties events in nature, but the mass is derived by humans.}
-d
+
 % 1.5
 \discussion{You could use pulsars as a way to measure time as they have a very precise rotation.  Less precise measures could be position of sun in the sky to determine the hour of day.}
 
@@ -82,7 +82,10 @@ d
 % TODO : Figure out what they are asking.
 \discussion{I don't know what they are talking about.  Their question makes no sense.}
 
-\section*{Exercises}
+\section{Exercises}
+
+\subsection*{Standard and Units}
+\subsection*{Using and Converting Units}
 
 % 1.1
 \exercise{(a) 2.57 km (b) 1.18 miles}
@@ -106,14 +109,246 @@ d
 \exercise{34.9 Years older}
 
 % 1.8
-% TODO
-%\exercise{}
+\exercise{185000 furlong/fortnight $\cdot$ $\frac{1}{8}$ mi/furlong $\cdot$ $\frac{1}{14}$ fortnight/days $\cdot$ $\frac{1}{24}$ day/hour = 66.96428571 mi/hour $\approx$ 67.0 mi/hour.}
 
 % 1.9
-% TODO
-%\exercise{}
+\exercise{(a) 23 \si{\kilo\meter/\liter} (b) 1.6 Tanks}
 
 % 1.10
-% TODO
-%\exercise{}
+\exercise{(a) 88 ft/s (b) 9.754 \si{\meter/\second^2} (c) 1000 $\si{\kilo\gram/\meter^3}$}
 
+% 1.11
+\exercise{9.0 \si{\centi\meter}}
+
+% 1.12
+\exercise{(a) 4.10$\times$10$^8$ \si{\micro\gram/day}}
+
+% 1.13
+\exercise{(i) $\frac{32}{3}\times10^{-8}$ (ii) $8\pi\times10^{-6}\si{\milli\meter^2}$}
+
+\subsection*{Uncertainty and Significant Figures}
+
+% 1.14
+\exercise{(a) \num{96} \si{\milli\meter^2} (b) 0.37 (c) 43.96 \si{\milli\meter} (d) 10 \si{\milli\meter} (e) 2.7}
+
+% 1.15
+\exercise{$\approx{0.45\%}$}
+
+% 1.16
+\exercise{(a) 3.14236 (b) 3.14159 (c) a: No, b: Yes}
+
+\subsection*{Estimates and Orders of Magnitude}
+
+% 1.17
+\exercise{Height in \si{\centi\meter}}
+
+% 1.18
+\exercise{16,000}
+
+% 1.19
+\exercise{7.1 $\times$ $10^8$ blinks in a lifetime}
+
+% 1.20
+\exercise{(a) 17 $\times$ $10^3$ \si{\meter^3/year} (b) 32 \si{\meter}}
+
+% 1.21
+\exercise{Average height of a female is 161.8 \si{\centi\meter} tall, assume $\approx{30 \si{\centi\meter}}$ wide and assume wall is 1 \si{\centi\meter} thick.  $\approx{\$936,000}$.}
+
+% 1.22
+\exercise{Estimations: beats/min$\approx{90}$, lifetime$\approx{80 years}$ (a) 3.8 $\times$ $10^9$ beats in a lifetime. (b) 5.0 $\times$ $10^7$ gallons pumped in a lifetime.}
+
+% 1.23
+\exercise{Estimations: diameter$\approx{1 \si{\milli\meter}}$ 2.4 $\times$ $10^5$ drops in a bottle}
+
+\subsection*{Vectors and Vector Addition}
+
+\begin{figure}[h!]
+    \centering
+\begin{tikzpicture}[scale=0.1]
+  \coordinate (origo) at (0,0);
+
+  % Sheet  
+  \draw[thin,gray!40] (-17,-17) (17,17);
+  \draw[->] (0,0)--(-17,0) node (-x) [left]{};
+  \draw[->] (0,0)--(17,0) node (x) [right]{$x$};
+  \draw[<->] (0,-17)--(0,17) node (y) [above]{$y$};
+  
+  % Vectors
+  \draw[blue,->,thick] (0,0) -- (70:15) %
+  	coordinate (B) node[right, text width=5em] %
+  	{$\boldsymbol{\vec{B} (15 \si{\meter})}$};
+  	
+  \draw[blue,->,thick] (0,0) -- (143:10) %
+  	coordinate (D) node[left, text width=5em] %
+  	{$\boldsymbol{\vec{D} (10 \si{\meter})}$};
+  	
+  \draw[blue,->,thick] (0,0) -- (205:12) %
+	coordinate (C) node[left, text width=5em] %
+  	{$\boldsymbol{\vec{C} (12 \si{\meter})}$};
+  	
+  \draw[blue,->,thick] (0,0) -- (270:8) %
+  	coordinate (A) node[right, text width=5em] %
+  	{$\boldsymbol{\vec{A} (8 \si{\meter})}$};
+  	
+  % Angles
+  \pic %
+  	[
+  		draw,
+  		<-,
+  		"$\ang{30.0}$"scale=0.75,
+  		angle eccentricity=1.5,
+  		angle radius=1cm
+  	] %
+  	{angle = B--origo--y};
+  	
+  \pic %
+  	[
+  		draw,
+  		<-,
+  		"$\ang{53.0}$"scale=0.75,
+  		angle eccentricity=1.5,
+  		angle radius=0.5cm
+  	] %
+  	{angle = y--origo--D};
+  	
+  \pic %
+  	[
+  		draw,
+  		<-,
+  		"$\ang{25.0}$"scale=0.75,
+  		angle eccentricity=1.5,
+  		angle radius=0.75cm
+  	] %
+  	{angle = -x--origo--C};
+\end{tikzpicture}
+    \label{fig:Problem1.24}
+    \caption{Problem 1.24}
+\end{figure}
+
+% 1.24
+\exercise{Using \Fig{fig:Problem1.24}.  Doing this in my head. (a) Angle, maybe around \ang{30} (\ang{33}), Looks around 10\si{\meter} (9\si{\meter}) (b) Angle, maybe \ang{25} (\ang{20}) from -y-axis and probably 20 m (c) Same as a but angle is now from negative x-axis (d) Same as b but angle is now from positive y-axis.}
+
+% 1.25
+\exercise{Magnitude: 7.83 \si{\kilo\meter}, Angle: \ang{38}}
+
+% 1.26
+\exercise{$(230,-37)$ \si{\meter}, Mag: 230 \si{\meter}, Deg: \ang{350}}
+
+\subsection*{Components of Vectors}
+
+% 1.27
+\exercise{Using \Fig{fig:Problem1.24}. \\
+\mbox{} \\
+\begin{tabular}{l l l l l}
+Vector & Magnitude & Angle & X & Y \\ \hline
+A & 270 \si{\meter} & \ang{8}  &  0 \si{\meter}    & -8 \si{\meter}    \\
+B & 60 \si{\meter}  & \ang{15} &  7.5  \si{\meter} &  13.0 \si{\meter} \\
+C & 205 \si{\meter} & \ang{12} & -10.9 \si{\meter} & -5.07 \si{\meter} \\
+D & 143 \si{\meter} & \ang{10} & -7.99 \si{\meter} &  6.02 \si{\meter}
+\end{tabular}}
+
+% 1.28
+\exercise{(a) \ang{335} (b) \ang{20.7} (c) \ang{122} (d) \ang{226} }
+
+% 1.29
+\exercise{
+\begin{tabular}{l l l l l}
+	x     & y  & angle & mag \\ \hline
+	-8.12 \si{\meter} & 13 \si{\meter} & \ang{122}   & 15.3 \si{\meter}
+\end{tabular}
+}
+
+% 1.30
+\exercise{
+\begin{tabular}{l l l l}
+	x     & y   & angle & mag \\ \hline
+	-20 \si{\meter}	  & -24 \si{\meter} & \ang{230}	& 31 \si{\meter}
+\end{tabular}}
+
+% 1.31
+\exercise{
+\begin{tabular}{l l l l l}
+	Vector & X & Y & Angle & Magnitude \\ \hline
+	A+B	&  7.5 \si{\kilo\meter} &  5.00 \si{\kilo\meter} & \ang{33.6} &	9.01 \si{\kilo\meter} \\
+	B+A	&  7.5 \si{\kilo\meter} &  5.00 \si{\kilo\meter} & \ang{33.6} &	9.01 \si{\kilo\meter} \\
+	B-A	&  7.5 \si{\kilo\meter} &  21.0 \si{\kilo\meter} & \ang{70.3} & 22.3 \si{\kilo\meter} \\
+	A-B	& -7.5 \si{\kilo\meter} & -21.0 \si{\kilo\meter} & \ang{70.3} & 22.3 \si{\kilo\meter}
+\end{tabular}}
+
+% 1.32
+\exercise{Magnitude: 7.83 \si{\kilo\meter}, Angle: \ang{38}}
+
+% 1.33
+\exercise{
+\begin{tabular}{l l l l}
+	x    & y    & angle & mag \\ \hline
+	1.95 \si{\kilo\meter} & -3.9  \si{\kilo\meter}& \ang{296} & 4.36 \si{\kilo\meter}
+\end{tabular}}
+
+% 1.34
+\exercise{
+\begin{tabular}{l l l l}
+	x    & y    & angle & mag \\ \hline
+	-8.60 \si{\centi\meter} &  5.20 \si{\centi\meter} & \ang{329}  & -10.0 \si{\centi\meter} \\
+	-9.70 \si{\meter} & -2.45 \si{\meter} & \ang{14.2} & -10.0 \si{\meter} \\
+	 7.75 \si{\kilo\meter} & -2.70 \si{\kilo\meter} & \ang{341}  &  8.21 \si{\kilo\meter}
+\end{tabular}}
+
+
+\begin{figure}[h!]
+    \centering
+\begin{tikzpicture}[scale=0.7]
+  \coordinate (origo) at (0,0);
+
+  % Sheet  
+  \draw[thin,gray!40] (-2,-2) (3,3);
+  \draw[<->] (-2,0)--(3,0) node (x) [right]{$x$};
+  \draw[<->] (0,-2)--(0,3) node (y) [above]{$y$};
+  
+  % Vectors
+  \draw[blue,->,thick] (0,0) -- (60:2.8) %
+  	coordinate (A) node[right, text width=5em] %
+  	{$\boldsymbol{\vec{A}}~(2.8~\si{\centi\meter})$};%
+  \draw[blue,->,thick] (0,0) -- (-60:1.90) %
+  	coordinate (B) node[right, text width=5em] %
+  	{$\boldsymbol{\vec{B}}~(1.9~\si{\centi\meter})$};%
+% Angles
+  \pic %
+  	[
+  		draw,
+  		<->,
+  		"$\ang{60.0}$"scale=0.75,
+  		angle eccentricity=1.5,
+  		angle radius=1cm
+  	] %
+  	{angle = x--origo--A};
+  	
+  \pic %
+  	[
+  		draw,
+  		<->,
+  		"$\ang{60.0}$"scale=0.75,
+  		angle eccentricity=1.5,
+  		angle radius=1cm
+  	] %
+  	{angle = B--origo--x};
+\end{tikzpicture}
+    \label{fig:Problem1.35}
+    \caption{Problem 1.35}
+\end{figure}
+
+
+% 1.35
+\exercise{Using \Fig{fig:Problem1.35}. \\
+\mbox{} \\
+\begin{tabular}{l l l l l}
+    Vector &  Angle & Magnitude \si{\centi\meter} &  X \si{\centi\meter}   &  Y \si{\centi\meter}	 \\ \hline
+    A+B    &  18.3  & 2.48      &  2.35 &  0.779 \\
+    A-B    &  83.7  & 4.10      &  0.45 &  4.07  \\
+    B-A    &  264   & 4.10      & -0.45 & -4.07
+\end{tabular}}
+
+\subsection*{Unit Vectors}
+
+% 1.36
+%\exercise{}
