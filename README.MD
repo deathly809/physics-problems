@@ -1,7 +1,21 @@
 
 # Physics Problems
 
-While (re)teaching myself physics I thought it might be helpful to do all the problems from the books I am reading.  Currently I am reading through [Sears and Zemansky's University Physics with Modern Physics, 14th Edition, Young and Freedman](https://www.amazon.com/University-Physics-Modern-14th/dp/0321973615).
+While (re)teaching myself physics I thought it might be helpful to do all the problems from the books I am reading.  Currently I am reading through [Sears and Zemansky's University Physics with Modern Physics, 14th Edition, Young and Freedman](https://www.amazon.com/University-Physics-Modern-14th/dp/0321973615).  Each chapter has the following problem sections
+
+* Discussion Questions
+* Exercises
+* Problems
+* Challange Problems
+
+
+If things start to go slower than I want I will switch to only doing Discussion Questions and *Exercises*.  If I feel like I am missing things I will try to spread the work out amoing *Exercises* and *Problems*.
+
+## Journal
+
+I am going to keep track of how things are going.  This will be mostly for me so that I can stay encouraged and also gauge how I am doing.
+
+You can follow along [here](docs\Journal.md) if you are realllly bored.
 
 ## Schedule
 
@@ -15,6 +29,7 @@ I want to make it though what is normally Physics 1 and 2 by the end of the year
 |-------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |Book    | Physics1&2     | Physics1&2     | Physics1&2     | Physics1&2     |
 |Chapers | Chapters 1-7   | Chapters 8-14  | Chapters 15-20 | Chapters 21-32 |
+|Status  | Halfway Ch 1   | TBD            | TBD            | TBD            |
 
 ### 2019
 
@@ -26,7 +41,7 @@ I actually think I will be able to make it through the rest of the book in Janua
 |-------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |Book    | Physics1&2     | EMAG           | EMAG           | EMAG           | EMAG           |
 |Chapers | Chapters 33-44 | Chapters 1-3   | Chapters 4-5   | Chapters 6-8   | Chapters 9-12  |
-
+|Status  | TBD            | TBD            | TBD            | TBD            | TBD            |
 **Summer**
 
 For the summer I will try to get into some more application type material.  Not sure on the chapters but I have two books of interest,  [Engineering Mechanics: Statics](https://www.amazon.com/Engineering-Mechanics-William-F-Riley/dp/0471512419) and [Engineering Mechanics: Dynamics](https://www.amazon.com/Engineering-Mechanics-Dynamics-William-Riley/dp/0471053392) by Wiley and Sturges. I might be forced to start reading back over my Calculus and  Differential Equations books and cover some other mathematical topics,
@@ -40,7 +55,7 @@ For the summer I will try to get into some more application type material.  Not 
 |-------:|:--------------:|:--------------:|
 |Book    | Statics        | Dynamics       |
 |Chapers | TODO           | TODO           |
-
+|Status  | TBD            | TBD            |
 **Fall**
 
 In the fall I will dig around for more advanced books.  I have some options such as 
@@ -53,7 +68,7 @@ In the fall I will dig around for more advanced books.  I have some options such
 |-------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |Book    | TODO           | TODO           | TODO           | TODO           | TODO           |
 |Chapers | TODO           | TODO           | TODO           | TODO           | TODO           |
-
+|Status  | TBD            | TBD            | TBD            | TBD            | TBD            |
 
 
 
