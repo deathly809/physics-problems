@@ -1,5 +1,14 @@
 \documentclass[oneside]{book}
 
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+
+% Pictures
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{mwe}
+\usepackage{subfig}
+
+
 % Custom environments
 \usepackage[english]{babel}
 \usepackage{blindtext}
@@ -19,6 +28,7 @@
 
 % Make margins reasonable
 \usepackage{fullpage}
+\usepackage{changepage}   % for the adjustwidth environment
 
 % Make TOC clickable
 \usepackage{xcolor}
@@ -67,6 +77,16 @@
 \newcommand*{\textbottomtopline}[1]{\textunderline{\textoverline{#1}}}
 \makeatother
 
+% Roman Numerals inline
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcommand{\velocity}[0]{\si{\meter/\second}}
+\newcommand{\acceleration}[0]{\si{\meter/\second^2}}
+\newcommand{\mass}[0]{\si{\kilo\gram^2}}
+\newcommand{\distance}[0]{\si{\meter}}
+
 % format and add to index
 \newcommand{\addindex}[1]{%
   \textbf{#1}%
@@ -99,9 +119,12 @@
 \newcounter{DiscussionCounter}[chapter]
 \newcounter{ExerciseCounter}[chapter]
 
-\newcommand{\discussion}[1] {\noindent\stepcounter{DiscussionCounter}\textbf{Q\arabic{chapter}.\arabic{DiscussionCounter}} #1\vspace{5mm}}
+\newcommand{\discussion}[1] {\noindent\stepcounter{DiscussionCounter}\textbf{Q\arabic{chapter}.\arabic{DiscussionCounter}}\vspace{1mm} %
+\begin{adjustwidth}{0.5cm}{}#1\end{adjustwidth}%
+\vspace{5mm}}
 
-\newcommand{\exercise}[1] {\noindent\stepcounter{ExerciseCounter}\textbf{\arabic{chapter}.\arabic{ExerciseCounter}} #1\vspace{5mm} }
+\newcommand{\exercise}[1] {\noindent\stepcounter{ExerciseCounter}\textbf{\arabic{chapter}.\arabic{ExerciseCounter}}\vspace{1mm}%
+\begin{adjustwidth}{0.5cm}{}#1\end{adjustwidth}\vspace{5mm} }
 
 \addcontentsline{toc}{section}{Introduction}
 
