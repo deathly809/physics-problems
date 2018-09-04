@@ -11,3 +11,6 @@ Finished the exercises.  So far they are straightforward but tedious.  I worry t
 
 I have started finished over half the discussion problems for chapter 2, they are pretty straightforward and I hope tomorrow I can finish them along with most, if not all of the exercises for chapter 2.
 
+## 9/2/2018
+
+Finished up the discussion questions for chapter 2 and made up to exercise 29.  Problems are beoming more tedious, this makes me worry.  So far I have been working on the problems in my notebook and transferring them over to latex when I can.  That is also taking up time as well.
