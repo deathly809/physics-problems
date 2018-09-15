@@ -82,10 +82,11 @@
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \makeatother
 
-\newcommand{\velocity}[0]{\si{\meter/\second}}
-\newcommand{\acceleration}[0]{\si{\meter/\second^2}}
-\newcommand{\mass}[0]{\si{\kilo\gram^2}}
-\newcommand{\distance}[0]{\si{\meter}}
+\newcommand{\velocity}[1]{#1~\si{\meter/\second}}
+\newcommand{\acceleration}[1]{#1~\si{\meter/\second^2}}
+\newcommand{\mass}[1]{#1~\si{\kilo\gram^2}}
+\newcommand{\distance}[1]{#1~\si{\meter}}
+\newcommand{\seconds}[1]{#1~\si{\second}}
 
 % format and add to index
 \newcommand{\addindex}[1]{%
