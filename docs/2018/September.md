@@ -30,4 +30,8 @@ Looking at the chart below I am about 40% of the way through the problems.  I ca
 | 5          | 0/28       | 0/59       | 0/52       | 0/4        | 0/3        | 0/146      |
 | 6          | 0/24       | 0/61       | 0/31       | 0/2        | 0/3        | 0/121      |
 | 7          | 0/23       | 0/36       | 0/43       | 0/1        | 0/4        | 0/107      |
-|Total       | 64/177     | 140/325    | 0/265      | 0/16       | 0/23       | 0/807      |
+|Total       | 64/177     | 140/325    | 0/265      | 0/16       | 0/23       | 204/807    |
+
+## 9/16/2018
+
+I inserted chapter 4's discussion questions.  I have started working on the exercises in my notebook and should update the latex maybe tonight, or if I can over the week.
