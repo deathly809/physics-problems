@@ -29,7 +29,7 @@ I want to make it though what is normally Physics 1 and 2 by the end of the year
 |-------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |Book    | Physics1&2     | Physics1&2     | Physics1&2     | Physics1&2     |
 |Chapers | Chapters 1-7   | Chapters 8-14  | Chapters 15-20 | Chapters 21-32 |
-|Status  | Chapter 6      | TBD            | TBD            | TBD            |
+|Status  | Slipped        | Chapter 7      | TBD            | TBD            |
 
 Problems for September (Only doing Discussions and Exercises):
 
@@ -39,10 +39,10 @@ Problems for September (Only doing Discussions and Exercises):
 | 2          | 22/22      | 54/54      | 0/32       | 0/3        | 0/3        | 76/114     |
 | 3          | 16/16      | 38/38      | 0/40       | 0/3        | 0/3        | 54/101     |
 | 4          | 38/38      | 29/29      | 0/26       | 0/1        | 0/4        | 67/98      |
-| 5          | 28/28      | 59/59      | 0/52       | 0/4        | 0/3        | 67/146     |
-| 6          | 20/24      | 0/61       | 0/31       | 0/2        | 0/3        | 20/121     |
+| 5          | 28/28      | 59/59      | 0/52       | 0/4        | 0/3        | 87/146     |
+| 6          | 24/24      | 61/61      | 0/31       | 0/2        | 0/3        | 85/121     |
 | 7          | 0/23       | 0/36       | 0/43       | 0/1        | 0/4        | 0/107      |
-|Total       | 150/177    | 228/325    | 0/265      | 0/16       | 0/23       | 378/807    |
+|Total       | 154/177    | 289/325    | 0/265      | 0/16       | 0/23       | 443/807    |
 
 ### 2019
 
