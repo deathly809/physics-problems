@@ -13,3 +13,7 @@ Had surgery on my teeth and have been super slipping.  I plan on finishing chapt
 ## 10/13/2018 (Evening)
 
 Finished as much as I could.  Teeth are hurting so hard to concentrate.  Also had to cleanup some.  Tomorrow I will be done with chapter 7 as I only have 18 more problems remaining and I don't expect any of them to be a blocker.
+
+## 10/14/2018
+
+Finished the first 7 chapters!  I need to move them over into Latex soon.  I will try to do that over the week.
