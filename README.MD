@@ -23,15 +23,15 @@ I am going to be going pretty fast I hope, I already took a bunch of physics in 
 
 ### 2018
 
-I want to make it though what is normally Physics 1 and 2 by the end of the year.  
+I want to make it though what is normally Physics 1 and 2 by the end of the year.  Currently I am only doing the discussion and Exercises.  If I try to do all of them I won't have time.
 
 |        | September      | October        | November       | December       |
 |-------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |Book    | Physics1&2     | Physics1&2     | Physics1&2     | Physics1&2     |
 |Chapers | Chapters 1-7   | Chapters 8-14  | Chapters 15-20 | Chapters 21-32 |
-|Status  | Slipped        | Chapter 7      | TBD            | TBD            |
+|Status  | Slipped        | Chapter 8      | TBD            | TBD            |
 
-Problems for September (Only doing Discussions and Exercises):
+#### September Problems
 
 | Chapter    | Discussion | Exercises  | Problems   | Challenge  | Passage    | Total      |
 |------------|------------|------------|------------|------------|------------|------------|
@@ -41,8 +41,21 @@ Problems for September (Only doing Discussions and Exercises):
 | 4          | 38/38      | 29/29      | 0/26       | 0/1        | 0/4        | 67/98      |
 | 5          | 28/28      | 59/59      | 0/52       | 0/4        | 0/3        | 87/146     |
 | 6          | 24/24      | 61/61      | 0/31       | 0/2        | 0/3        | 85/121     |
-| 7          | 23/23      | 18/36      | 0/43       | 0/1        | 0/4        | 41/107     |
-|Total       | 177/177    | 307/325    | 0/265      | 0/16       | 0/23       | 484/807    |
+| 7          | 23/23      | 36/36      | 0/43       | 0/1        | 0/4        | 57/107     |
+|Total       | 177/177    | 325/325    | 0/265      | 0/16       | 0/23       | 502/807    |
+
+#### October Problems
+
+| Chapter    | Discussion | Exercises  | Problems   | Challenge  | Passage    | Total      |
+|------------|------------|------------|------------|------------|------------|------------|
+| 8          | 0/26       | 0/63       | 0/39       | 0/3        | 0/4        | 0/120      |
+| 9          | 0/22       | 0/55       | 0/34       | 0/2        | 0/4        | 0/114      |
+| 10         | 0/30       | 0/53       | 0/37       | 0/3        | 0/4        | 0/101      |
+| 12         | 0/25       | 0/41       | 0/47       | 0/3        | 0/4        | 0/98       |
+| 13         | 0/30       | 0/50       | 0/37       | 0/1        | 0/4        | 0/146      |
+| 14         | 0/21       | 0/40       | 0/38       | 0/3        | 0/3        | 0/121      |
+|Total       | 0/154      | 0/302      | 0/232      | 0/15       | 0/23       | 0/807      |
+
 
 ### 2019
 
