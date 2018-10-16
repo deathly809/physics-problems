@@ -17,3 +17,7 @@ Finished as much as I could.  Teeth are hurting so hard to concentrate.  Also ha
 ## 10/14/2018
 
 Finished the first 7 chapters!  I need to move them over into Latex soon.  I will try to do that over the week.
+
+## 10/15/2018
+
+Got a few things done tonight.  Chapter 4 exercises are in, excluding pictures.  Fixed up formatting and did some general cleanup of the latex.
