@@ -82,13 +82,7 @@
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \makeatother
 
-\newcommand{\force}[1]{#1~\si{\newton}}
-\newcommand{\velocity}[1]{#1~\si{\meter/\second}}
-\newcommand{\acceleration}[1]{#1~\si{\meter/\second^2}}
-\newcommand{\mass}[1]{#1~\si{\kilo\gram^2}}
-\newcommand{\distance}[1]{#1~\si{\meter}}
-\newcommand{\seconds}[1]{#1~\si{\second}}
-\newcommand{\hours}[1]{#1~\si{\hour}}
+\input{si-commands.tex}
 
 % format and add to index
 \newcommand{\addindex}[1]{%
@@ -146,66 +140,12 @@
 
 \mainmatter
 
-\part{Mechanics}
-\input{chapters/mechanics/chapter1.tex}
-\input{chapters/mechanics/chapter2.tex}
-\input{chapters/mechanics/chapter3.tex}
-\input{chapters/mechanics/chapter4.tex}
-\input{chapters/mechanics/chapter5.tex}
-\input{chapters/mechanics/chapter6.tex}
-\input{chapters/mechanics/chapter7.tex}
-\input{chapters/mechanics/chapter8.tex}
-\input{chapters/mechanics/chapter9.tex}
-\input{chapters/mechanics/chapter10.tex}
-\input{chapters/mechanics/chapter11.tex}
-\input{chapters/mechanics/chapter12.tex}
-\input{chapters/mechanics/chapter13.tex}
-\input{chapters/mechanics/chapter14.tex}
-
-% Waves need to be understood 100% Almost all things in Physics are modeled using waves.
-\part{Waves and Acoustics}
-\input{chapters/wavesandacoustics/chapter15.tex}
-\input{chapters/wavesandacoustics/chapter16.tex}
-
-% Fundamental
-\part{Thermodynamics}
-\input{chapters/thermodynamics/chapter17.tex}
-\input{chapters/thermodynamics/chapter18.tex}
-\input{chapters/thermodynamics/chapter19.tex}
-\input{chapters/thermodynamics/chapter20.tex}
-
-% Advanced physics comes out of this!
-\part{Electromagnetism}
-\input{chapters/electromagnetism/chapter21.tex}
-\input{chapters/electromagnetism/chapter22.tex}
-\input{chapters/electromagnetism/chapter23.tex}
-\input{chapters/electromagnetism/chapter24.tex}
-\input{chapters/electromagnetism/chapter25.tex}
-\input{chapters/electromagnetism/chapter26.tex}
-\input{chapters/electromagnetism/chapter27.tex}
-\input{chapters/electromagnetism/chapter28.tex}
-\input{chapters/electromagnetism/chapter29.tex}
-\input{chapters/electromagnetism/chapter30.tex}
-\input{chapters/electromagnetism/chapter31.tex}
-\input{chapters/electromagnetism/chapter32.tex}
-
-% More applied like stuff
-\part{Optics}
-\input{chapters/optics/chapter33.tex}
-\input{chapters/optics/chapter34.tex}
-\input{chapters/optics/chapter35.tex}
-\input{chapters/optics/chapter36.tex}
-
-% Introduction to Relativity, particle physics, quantum physics
-\part{Modern Physics}
-\input{chapters/modernphysics/chapter37.tex}
-\input{chapters/modernphysics/chapter38.tex}
-\input{chapters/modernphysics/chapter39.tex}
-\input{chapters/modernphysics/chapter40.tex}
-\input{chapters/modernphysics/chapter41.tex}
-\input{chapters/modernphysics/chapter42.tex}
-\input{chapters/modernphysics/chapter43.tex}
-\input{chapters/modernphysics/chapter44.tex}
+\input{parts/mechanics.tex}	% Fundmentals
+\input{parts/wavesandacoustics.tex}		% Waves need to be understood 100% Almost all things in Physics are modeled using waves.
+\input{parts/thermodynamics.tex}			% Fundamental
+\input{parts/electromagnetism.tex} 		% Advanced physics comes out of this!
+\input{parts/optics.tex}					% More applied like stuff
+\input{parts/modernphysics.tex}			% Introduction to Relativity, particle physics, quantum physics
 
 \backmatter
 
