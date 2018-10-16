@@ -118,12 +118,25 @@
 \newcounter{DiscussionCounter}[chapter]
 \newcounter{ExerciseCounter}[chapter]
 
-\newcommand{\discussion}[1] {\noindent\stepcounter{DiscussionCounter}\textbf{Q\arabic{chapter}.\arabic{DiscussionCounter}}\vspace{1mm} %
-\begin{adjustwidth}{0.5cm}{}#1\end{adjustwidth}%
-\vspace{5mm}}
+\newcommand{\Before}[0]{}
+\newcommand{\After}[0]{}
 
-\newcommand{\exercise}[1] {\noindent\stepcounter{ExerciseCounter}\textbf{\arabic{chapter}.\arabic{ExerciseCounter}}\vspace{1mm}%
-\begin{adjustwidth}{0.5cm}{}#1\end{adjustwidth}\vspace{5mm} }
+\newcommand{\discussion}[1]{%
+	\noindent\begin{minipage}{\textwidth}%
+		\noindent\stepcounter{DiscussionCounter}\textbf{Q\arabic{chapter}.\arabic{DiscussionCounter}}%
+		\vspace{1mm}%
+		\begin{adjustwidth}{0.5cm}{}\Before#1\After%
+		\end{adjustwidth}%
+		\vspace{5mm}%
+	\end{minipage}
+}
+
+\newcommand{\exercise}[1] {
+	\noindent\begin{minipage}{\textwidth}
+		\noindent\stepcounter{ExerciseCounter}\textbf{\arabic{chapter}.\arabic{ExerciseCounter}}\vspace{1mm}
+		\begin{adjustwidth}{0.5cm}{}\Before#1\After\end{adjustwidth}
+	\end{minipage}\vspace{5mm}
+}
 
 \addcontentsline{toc}{section}{Introduction}
 
