@@ -21,3 +21,7 @@ Finished the first 7 chapters!  I need to move them over into Latex soon.  I wil
 ## 10/15/2018
 
 Got a few things done tonight.  Chapter 4 exercises are in, excluding pictures.  Fixed up formatting and did some general cleanup of the latex.
+
+## 10/16/2018
+
+Added chapter 5 discussion questions, reworked a few.
