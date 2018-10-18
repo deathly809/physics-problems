@@ -25,3 +25,7 @@ Got a few things done tonight.  Chapter 4 exercises are in, excluding pictures. 
 ## 10/16/2018
 
 Added chapter 5 discussion questions, reworked a few.
+
+## 10/16/2018
+
+Added chapter 5 exercises.  Updated subsections so they are added to TOC and also created a preface.
