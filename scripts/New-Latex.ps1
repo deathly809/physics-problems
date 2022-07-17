@@ -1,12 +1,13 @@
+#!/usr/bin/pwsh -Command
 
-Function New-Latex {
-    [cmdletbinding()]
-    param(
+function New-Latex {
 
+    [CmdletBinding()]
+    param (
         [Parameter(Mandatory=$true)]
         [ValidateRange(1, [int]::MaxValue)]
         [int]$Chapter,
-        
+    
         [Parameter(Mandatory=$true)]
         [ValidateRange(1, [int]::MaxValue)]
         [int]$Entries,
@@ -14,6 +15,7 @@ Function New-Latex {
         [ValidateSet('Discussions','Exercises')]
         [System.String]$Type
     )
+    
     [System.String]$result = ""
     $mapping = @{
         Discussions = '\discussion';
