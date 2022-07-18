@@ -1,5 +1,7 @@
 
 # latex output
+*.bbl
+*.blg
 *.aux
 *.log
 *.pdf
