@@ -11,3 +11,5 @@
 *.out
 *.ilg
 *.ind
+*.fls
+*.fdb_latexmk
