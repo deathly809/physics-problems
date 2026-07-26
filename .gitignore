@@ -13,3 +13,6 @@
 *.ind
 *.fls
 *.fdb_latexmk
+
+# Mac junk
+.DS_STORE
